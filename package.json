@@ -14,6 +14,7 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "cube-ui": "~1.12.1",
+    "postcss-size-zoom": "^1.0.1",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
