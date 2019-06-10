@@ -21,14 +21,12 @@ function checkUrl (config) {
     }
   } else { // post请求签名
     if (!config.data) {
-      console.log(options)
       options = {
         _appid: 'optimus.m',
         ...config.params,
         _timestamp: Math.floor(new Date().getTime() / 1000)
       }
     } else {
-      console.log(options)
       options = {
         _appid: 'optimus.m',
         _timestamp: Math.floor(new Date().getTime() / 1000)
@@ -46,7 +44,7 @@ function checkUrl (config) {
     if (options[val] !== null && options[val] !== undefined) {
       result += val + options[val]
     } else {
-      console.log('参数错误：' + val + '-' + options[val])
+      // console.log('参数错误：' + val + '-' + options[val])
     }
   })
   // 进行md5加密
